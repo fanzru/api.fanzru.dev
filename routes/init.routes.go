@@ -10,6 +10,7 @@ func Init() *echo.Echo{
 
 	// user routes
 	e = RouteUser(e)
+	e = RoutePost(e)
 
 	// middleware buat models
 	e.Debug = true
